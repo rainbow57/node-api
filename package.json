@@ -1,0 +1,44 @@
+{
+  "name": "node-api",
+  "version": "0.0.1",
+  "description": "api for web building with node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainbow57/node-api.git"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "passport"
+  ],
+  "author": "Jin Ye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rainbow57/node-api/issues"
+  },
+  "homepage": "https://github.com/rainbow57/node-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jstz": "^2.0.0",
+    "moment-timezone": "^0.5.14",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.1",
+    "passport": "^0.4.0",
+    "sequelize": "^4.24.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.12.1",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
