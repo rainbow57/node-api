@@ -1,17 +1,14 @@
-let express = require( 'express' ),
-	morgan = require( 'morgan' ),
-	fs = require( 'fs' ),
-	path = require( 'path' ),
-	config = require( './' + Process.NODE_ENV || 'development' )
+var express = require( 'express' ),
+	bodyParser = require( 'body-parser'),
+	config = require( './' + Process.env.NODE_ENV || 'development' ),
+	log = require( './logs.js' )
 
-let app = express(),
-	logDirectory = path.join( __dirname , 'logs' )
+var app = express()
 
-//ensure folder exists
+app.use( bodyParser.json() )
+app.use( bodyParser.urlencoded({ extends: false}) )
 
-fs.existsSync( logDirectory ) || fs.mkdirSync( logDirectory )
-
-app.use( morgan( 'short' ) )
+require( './routers' )( app )
 
 app.use( function( req, res, next ){
 	res.send('ok')

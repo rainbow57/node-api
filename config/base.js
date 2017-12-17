@@ -1,4 +1,5 @@
 module.exports = {
+	language: 'zh', //语言 zh-ch 中文 en-us 英文
 	RPCSecret: '',
 	DataBase: {
 		dialect: 'mysql',
