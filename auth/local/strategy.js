@@ -6,7 +6,7 @@ let verifyCallback = ( req, username, password, done ) => {
 	
 }
 
-exports.config = ( user, config ) => {
+exports.setStrategy = ( user, config ) => {
 	passport.use( new LocalStrategy({
 		passReqToCallback: true
 	}, verifyCallback ))

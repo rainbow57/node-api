@@ -1,6 +1,9 @@
-let express = require( 'express' )
+let express = require( 'express' ),
+	router = express.Router(),
+	config = require( '../config/' + ( process.env.NODE_ENV || 'development' ))
 
-let router = express.Router()
+//添加策略
+require( './local/strategy' ).setStrategy( user, config )
 
 router.use( '/local', require( './local' ) )
 // 

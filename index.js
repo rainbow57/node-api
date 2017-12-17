@@ -1,6 +1,6 @@
 var express = require( 'express' ),
 	bodyParser = require( 'body-parser'),
-	config = require( './' + Process.env.NODE_ENV || 'development' ),
+	config = require( './config/' + ( process.env.NODE_ENV || 'development' )),
 	log = require( './logs.js' )
 
 var app = express()
