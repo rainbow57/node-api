@@ -5,7 +5,7 @@ module.exports = {
 		dialect: 'mysql',
 		host: 'localhost',
 		port: 3306,
-		database: 'platform',
+		database: 'ajaxishow',
 		username: 'root',
 		password: 'study_7132189'
 	},

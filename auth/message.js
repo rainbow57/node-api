@@ -3,10 +3,12 @@ exports.zh = {
 	captchaIsEmpty: '验证码不能为空',
 	captchaError: '验证码错误',
 	userNameOrPasswordIsEmpty: '用户名或密码不能为空'
+	needLogin: '请先登录'
 }
 //英文提示
 exports.en = {
 	captchaIsEmpty: 'Captcha is Empty',
 	captchaError: 'Captcha error',
-	userNameOrPasswordIsEmpty: 'Username Or password is empty'
+	userNameOrPasswordIsEmpty: 'Username Or password is empty',
+	needLogin: 'You need login'
 }
